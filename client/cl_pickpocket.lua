@@ -35,7 +35,7 @@ local function pickPocket(data)
     checkWhilePickpocketing(data.entity)
     Config.AlertPolice(GetEntityCoords(cache.ped))
 
-    if lib.progressCircle({
+    if lib.progressBar({
         duration = Config.ProgressTime,
         position = 'bottom',
         label = 'Pickpocketing..',
